@@ -53,6 +53,62 @@
 
     </section>
      <hr>
+
+     <canvas id="myCanvass"
+     width="200"
+     height="100"
+     style="border:1px solid #000000;">
+     </canvas>
+     <script>
+        var canvas = document.getElementById("myCanvass");
+var ctx = canvas.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hello World",10,50);
+     </script>
+<hr>
+
+<p>Image to use:</p>
+
+<img id="scream" width="220" height="277"
+src="pic_the_scream.jpg" alt="The Scream">
+
+<p>Canvas:</p>
+
+<canvas id="myCanvas" width="240" height="297"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script>
+window.onload = function() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var img = document.getElementById("scream");
+   ctx.drawImage(img, 10, 10);
+};
+</script>
+<hr>
+
+<audio controls>
+    <source src="Folder2/horse.ogv" type="audio/ogg">
+  Your browser does not support the audio element.
+  </audio>
+
+  <br>
+
+  <video width="320" height="240" autoplay muted>
+    <source src="Folder2/movie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  <hr>
+
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+    <hr>
+
+
   <footer>
     <p>Thank you!</p>
     <p><small>©Copyright</small></p>
